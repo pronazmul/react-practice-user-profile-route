@@ -12,15 +12,20 @@ class StatePractice extends Component {
         }
     }
 
+    changeState(name, age, profession){
+
+        this.setState({name:name, age:age, profession:profession})
+    }
 
 
 
     render() {
         return (
-            <div>
-                <h1 className='text-center'>Name: {this.state.name}</h1>
-                <h1 className='text-center'>Age: {this.state.age}</h1>
-                <h1 className='text-center'>Profession: {this.state.profession}</h1>
+            <div className='jumbotron text-center'>
+                <h1>Name: {this.state.name}</h1>
+                <h1>Age: {this.state.age}</h1>
+                <h1>Profession: {this.state.profession}</h1>
+                <button className='btn btn-warning btn-lg' onClick={()=>this.changeState('Bilal Hossain', 25, 'Frontend Developer')}>Change Data</button>
             </div>
         );
     }
