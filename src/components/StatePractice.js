@@ -25,7 +25,7 @@ class StatePractice extends Component {
                 <h1>Name: {this.state.name}</h1>
                 <h1>Age: {this.state.age}</h1>
                 <h1>Profession: {this.state.profession}</h1>
-                <button className='btn btn-warning btn-lg' onClick={()=>this.changeState('Bilal Hossain', 25, 'Frontend Developer')}>Change Data</button>
+                <button className='btn btn-warning btn-lg' onClick={()=>this.changeState('Sania Akter', 21, 'Frontend Programmer')}>Change Data</button>
             </div>
         );
     }
