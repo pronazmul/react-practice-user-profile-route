@@ -6,10 +6,13 @@ import ConditionalReturnIfElse from './components/ConditionalReturnIfElse';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import ConditionalReturnElementVarriable from './components/ConditionalReturnElementVarriable';
 import RefreshNow from './components/RefreshNow';
+import DomRenderHydrade from './components/DomRenderHydrade';
 
 function App() {
   return (  
           <div>
+              <h1 className='text-center'>Change Container Data Using React DOM</h1>
+              <DomRenderHydrade></DomRenderHydrade>
               <h1 className='text-center'>Automaitce Force Update</h1>
               <RefreshNow></RefreshNow>
               <hr></hr>
