@@ -17,7 +17,7 @@ const DomRenderHydrade = () => {
     return (
         <div>
             <h1 id='myComponent' className='text-center'>Back-end developer Nazmul</h1>
-            <button onClick={changeDom} className='btn btn-success d-block mx-auto m-4'>Change Date Using React DOM</button>
+            <button onClick={changeDom} className='btn btn-success d-block mx-auto m-4'>Change DATA</button>
         </div>
     );
 };

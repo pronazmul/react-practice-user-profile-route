@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DomPractice from './components/DomPractice';
 import StatePractice from './components/StatePractice';
 import ConditionalReturnIfElse from './components/ConditionalReturnIfElse';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -8,21 +8,26 @@ import ConditionalReturnElementVarriable from './components/ConditionalReturnEle
 import RefreshNow from './components/RefreshNow';
 import DomRenderHydrade from './components/DomRenderHydrade';
 
+
 function App() {
-  return (  
+  return (   
           <div>
-              <h1 className='text-center'>Change Container Data Using React DOM</h1>
+              <h5 className='text-center'>Change DOM using findDOMNode</h5>
+              <DomPractice></DomPractice>
+              <hr></hr>
+              <h5 className='text-center'>Change Container Using DOM render() or hydrade()</h5>
               <DomRenderHydrade></DomRenderHydrade>
-              <h1 className='text-center'>Automaitce Force Update</h1>
+              <hr></hr>
+              <h5 className='text-center'>Automaitce Force Update this.forceUpdate()</h5>
               <RefreshNow></RefreshNow>
               <hr></hr>
-              <h1 className='text-center'>Conditional Return inside return block</h1>
+              <h5 className='text-center'>Conditional Return inside return block</h5>
               <ConditionalReturnElementVarriable></ConditionalReturnElementVarriable>
               <hr></hr>
-              <h1 className='text-center'>Conditional Return Using State value Check</h1>
+              <h5 className='text-center'>Conditional Return Using State value Check</h5>
               <ConditionalReturnIfElse></ConditionalReturnIfElse>
-                <hr></hr>
-              <h1 className='text-center'>State value set and Update</h1>
+              <hr></hr>
+              <h5 className='text-center'>State value set and Update</h5>
               <StatePractice></StatePractice>
           </div>
    )
